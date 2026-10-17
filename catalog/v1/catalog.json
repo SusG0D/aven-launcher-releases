@@ -1,0 +1,360 @@
+{
+  "schemaVersion": "1.0",
+  "sequence": 2,
+  "generatedAt": "2026-10-17T08:21:54.631Z",
+  "apps": [
+    {
+      "id": "chapture",
+      "name": "Chapture",
+      "tagline": "Your private journal, with a social layer when you want one.",
+      "description": "Chapture is a private journaling app: write entries, track your mood and streaks, see trends in your life, and share moments with friends only when you choose to. Use it on the web at thechapture.com or install the Windows app, which keeps your diary on this PC and can sync with your account.",
+      "icon": "assets/chapture.svg",
+      "accent": "#7c6af7",
+      "type": "hybrid",
+      "status": "released",
+      "categories": [
+        "Journaling",
+        "Productivity"
+      ],
+      "links": {
+        "website": "https://www.thechapture.com",
+        "support": "https://www.thechapture.com/en/support",
+        "privacy": "https://www.thechapture.com/en/privacy"
+      },
+      "license": {
+        "model": "free",
+        "summary": "Free to use. Sign in with a Chapture account, or use it as a guest.",
+        "manageUrl": "https://www.thechapture.com",
+        "avenAccount": false
+      },
+      "desktop": {
+        "adapter": "electron-nsis",
+        "appId": "com.avenprojects.aven",
+        "exeName": "chapture.exe",
+        "installDirName": "chapture",
+        "userDataDirs": [
+          {
+            "base": "appData",
+            "name": "Chapture"
+          }
+        ],
+        "publisher": {
+          "requireSignature": false
+        },
+        "channels": {
+          "stable": {
+            "version": "0.79.0",
+            "date": "2026-10-05",
+            "installer": {
+              "url": "https://github.com/SusG0D/chapture-releases/releases/download/v0.79.0/chapture-Setup-0.79.0.exe",
+              "sha256": "c788126af391db3e1d6e9e70b4312b95159c87090c8a5c9584fa2f4cef1e7600",
+              "size": 170054001
+            },
+            "notes": {
+              "features": [
+                "chapture AI now finishes its answer even if you close it, move to another page or reload. A ring on the AI button means it's still writing, and a dot means a new reply is waiting."
+              ],
+              "improvements": [
+                "If the page was reloaded or closed mid-answer, opening chapture AI again brings you back to that chat with the full reply.",
+                "Chat messages now show Markdown formatting: bold, italic, code, ~~strikethrough~~, links, lists and quotes. Previews in the chat list and notifications show clean text."
+              ],
+              "fixes": [
+                "Long-pressing a diary in the Timeline now only opens the preview. It no longer selects text underneath."
+              ],
+              "security": []
+            },
+            "notesUrl": "https://github.com/SusG0D/chapture-releases/releases/tag/v0.79.0"
+          }
+        },
+        "previous": [
+          {
+            "version": "0.78.0",
+            "date": "2026-10-04",
+            "installer": {
+              "url": "https://github.com/SusG0D/chapture-releases/releases/download/v0.78.0/chapture-Setup-0.78.0.exe",
+              "sha256": "94beb806f03f6cd374bf9b858f10e84ba51d8ac77cea0ba96b3772ea6c9fb5f0",
+              "size": 170043759
+            },
+            "notes": {
+              "features": [],
+              "improvements": [
+                "Moderators can add as many photos as they like to diaries and notes.",
+                "Moderators can now give any user their own photo limit from Moderation → Users: a higher or lower number, or unlimited. Each photo is still up to 2 MB."
+              ],
+              "fixes": [],
+              "security": []
+            },
+            "notesUrl": "https://github.com/SusG0D/chapture-releases/releases/tag/v0.78.0"
+          },
+          {
+            "version": "0.77.0",
+            "date": "2026-10-04",
+            "installer": {
+              "url": "https://github.com/SusG0D/chapture-releases/releases/download/v0.77.0/chapture-Setup-0.77.0.exe",
+              "sha256": "ac1398a489ac1d1907b6c9babb06679dedc3cb9c930dfa44451edfcfd4433331",
+              "size": 170031605
+            },
+            "notes": {
+              "features": [
+                "New Content filters in the Timeline: show only diaries with images, or only ones with maths and money in them, such as ≈, %, $1,200 or a fraction."
+              ],
+              "improvements": [
+                "Filter by length too: fewer than, more than, or between a number of words. Word counts now understand Thai, which doesn't put spaces between words.",
+                "The same filters also apply when you search from the Timeline."
+              ],
+              "fixes": [
+                "Desktop app: the public home page no longer appears once you're signed in. Its links are gone from the menus, and you go straight to your Dashboard."
+              ],
+              "security": [
+                "Desktop app: Terms, Privacy, Security, the Help Center and other website pages now open in your web browser."
+              ]
+            },
+            "notesUrl": "https://github.com/SusG0D/chapture-releases/releases/tag/v0.77.0"
+          }
+        ]
+      },
+      "web": {
+        "url": "https://www.thechapture.com",
+        "pwa": {
+          "manifestProbe": true,
+          "shortcutNames": [
+            "chapture",
+            "Chapture"
+          ]
+        }
+      }
+    },
+    {
+      "id": "inkwell",
+      "name": "Inkwell PDF",
+      "tagline": "A fast, local PDF editor for Windows.",
+      "description": "Inkwell PDF opens, annotates and edits PDFs entirely on your PC: text boxes, shapes, pictures, page arrangement, split view and more. Everything stays on your computer. The free plan covers reading and editing with a daily export allowance; a license unlocks everything.",
+      "icon": "assets/inkwell.png",
+      "accent": "#b8402b",
+      "type": "desktop",
+      "status": "released",
+      "categories": [
+        "PDF",
+        "Productivity"
+      ],
+      "links": {
+        "website": "https://store.thechapture.com",
+        "support": "https://store.thechapture.com/account"
+      },
+      "license": {
+        "model": "freemium",
+        "summary": "Free plan with 10 exports a day. Plus, Pro and Unlimited licenses unlock every feature.",
+        "manageUrl": "https://store.thechapture.com/account",
+        "provider": "inkwell-license",
+        "avenAccount": false
+      },
+      "desktop": {
+        "adapter": "electron-nsis",
+        "appId": "com.avenprojects.inkwellpdf",
+        "exeName": "Inkwell PDF.exe",
+        "installDirName": "Inkwell PDF",
+        "userDataDirs": [
+          {
+            "base": "appData",
+            "name": "InkwellPDF"
+          }
+        ],
+        "publisher": {
+          "requireSignature": false
+        },
+        "channels": {
+          "stable": {
+            "version": "1.2.0",
+            "date": "2026-10-16",
+            "installer": {
+              "url": "https://github.com/SusG0D/inkwell-releases/releases/download/v1.2.0/Inkwell-PDF-Setup-1.2.0.exe",
+              "sha256": "85d1f1b76e3e5f5ed0fbe436aab0bc51f89ea0d2ae3a7497027e54d85c797a08",
+              "size": 114382669
+            },
+            "notes": {
+              "features": [
+                "Split View (View → Split View, Ctrl+\\): show two parts of the same PDF, or two open PDFs, side by side. Both sides stay up to date; click a side to edit it, and drag the bar between them to resize. Right-click a tab and choose \"Open in split view\" to put that document beside the one you're working on.",
+                "Text boxes understand markdown as you type or paste: bold, italic, __underline__, ~~strikethrough~~, x^2^ for superscript, H~2~O for subscript, and - at the start of a line for a bullet. Settings → General can turn it off."
+              ],
+              "improvements": [],
+              "fixes": [
+                "Holding Shift while dragging a side handle of a picture or shape now keeps its proportions, as the corner handles already did."
+              ],
+              "security": []
+            },
+            "notesUrl": "https://github.com/SusG0D/inkwell-releases/releases/tag/v1.2.0"
+          }
+        },
+        "previous": [
+          {
+            "version": "1.1.0",
+            "date": "2026-10-14",
+            "installer": {
+              "url": "https://github.com/SusG0D/inkwell-releases/releases/download/v1.1.0/Inkwell-PDF-Setup-1.1.0.exe",
+              "sha256": "7d487fe3569a99874060295e112b886ed2d164573814979ef3b8e5eb8a4572af",
+              "size": 114376993
+            },
+            "notes": {
+              "features": [
+                "Continue for Free is now a clear button on the sign-in screen. No account is needed: open, read and edit with the free tools straight away.",
+                "The Free plan can save or export 10 documents a day. A document's first save, Save As, export or print of the day uses one; after that it saves and exports as often as you like until midnight. Saving a file with no changes is free.",
+                "The status bar and Settings → Account show how many free exports are left and when the count resets.",
+                "Before a document uses one of the day's free exports, Inkwell asks first. Tick \"Don't ask again\" to stop the question (Settings → Account turns it back on).",
+                "Settings → Account keeps a history of your free exports: when, and what kind, never file names or what was in them.",
+                "Try paid tools before you buy: on the Free plan you can use shapes, fonts, the ruler, underline and strikeout, magic select, Edit Existing Text, page organizing, sections and form filling. A strip shows what you're trying. To save a document that uses them, upgrade or choose \"Remove tried-out edits\"."
+              ],
+              "improvements": [
+                "The Free plan no longer limits how many PDFs you open a day. The daily limit now counts saves and exports instead.",
+                "Clicking a paid feature shows a short message with an Upgrade button instead of a dialog.",
+                "Printing on the Free plan counts as an export, like saving."
+              ],
+              "fixes": [],
+              "security": []
+            },
+            "notesUrl": "https://github.com/SusG0D/inkwell-releases/releases/tag/v1.1.0"
+          },
+          {
+            "version": "1.0.0",
+            "date": "2026-10-14",
+            "installer": {
+              "url": "https://github.com/SusG0D/inkwell-releases/releases/download/v1.0.0/Inkwell-PDF-Setup-1.0.0.exe",
+              "sha256": "e6e62932d7303a2efc4940747427ed947f2a9cbd8fc75722df729a245d319d03",
+              "size": 114370856
+            },
+            "notes": {
+              "features": [
+                "Inkwell 1.0: the first public release, out of beta and ready to download.",
+                "Line objects up. Select two or more and press Position (or right-click them) to align their left, centre, right, top, middle or bottom edges, space them evenly, or give them the same width, height or both. They can line up with each other, with the page, or with one \"key\" object: click one of the selected objects to make it the key.",
+                "Smart guides: while you drag, objects snap to the edges and centres of other objects and of the page, with a guide line to show it. Hold Alt to move freely.",
+                "Group objects with Ctrl+G so they select and move as one; Ctrl+Shift+G ungroups them. Lock an object so it can't be moved, resized, erased or deleted by accident.",
+                "Bring Forward and Send Backward (Ctrl+Shift+] and Ctrl+Shift+[), next to Bring to Front and Send to Back.",
+                "The Position panel opens beside the page, not over it, with its sections folding away. It remembers which ones you leave open.",
+                "Right-click the page for everything you can do with what's selected: cut, copy, paste, arrange, align, match size, group, lock, crop and more.",
+                "Drag pictures from File Explorer, or straight out of a web page, onto a page to insert them where you drop them. Several at once land in a neat cascade. WebP, GIF and BMP work as well as PNG and JPEG.",
+                "Paste a picture with Ctrl+V after copying it in another program.",
+                "Replace a picture with another, keeping its place and size.",
+                "Crop pictures: double-click one, drag the handles, press Enter. The rest of the picture is kept, so a crop can be widened again later.",
+                "Very large pictures are scaled down as you insert them, so your PDFs stay small. You can turn this off in Settings → General.",
+                "Present your PDF full screen with F5 (Shift+F5 starts from the first page). Arrow keys, Page Up/Down, Space, a click or the mouse wheel move through it, and Esc puts everything back exactly as it was. Hold Ctrl for a laser pointer. A bar with the page number appears when you move the mouse.",
+                "With a second display, present on it and keep a presenter view on yours: the current and next page, a timer and a clock. Choose the display from the Present button's menu.",
+                "A File menu at the left of the toolbar, with Advanced and Export As submenus, matching the window's own File menu.",
+                "New PDF lets you pick the page size (A4, Letter, Legal, A3, A5 or your own), orientation and number of pages.",
+                "Export As PNG can save this page, the selected pages or every page, at the resolution you choose.",
+                "Export As PDF saves a flattened copy that looks the same in every reader.",
+                "Password Protect saves an AES-256 encrypted copy that asks for a password when opened, optionally with an owner password that limits printing, copying and changes.",
+                "Optimize PDF makes a smaller copy: Balanced shrinks oversized pictures and drops unused data, Smallest turns each page into a picture (best for scans). It shows the size before and after.",
+                "Batch Export turns many PDFs at once into PNG pages, Word files, or flattened or optimized PDFs.",
+                "Document Properties: see and change a PDF's title, author, subject and keywords.",
+                "Pin files to keep them at the top of the start screen, Open Recent and the list in Settings.",
+                "Right-click the toolbar to hide it, show labels under the icons, choose small, medium or large icons, use a compact layout, have it hide until you point at the top edge, switch off the tools that appear for a selection, search the tools, or customize it.",
+                "Customize the toolbar: drag tools into any order, and put each one on the toolbar, in Advanced Tools, or out of sight. Reset Toolbar to Default puts it all back. Your layout is kept when Inkwell restarts.",
+                "Double-click an empty part of the toolbar to hide it. View → Show/Hide Toolbar (Ctrl+Shift+H) brings it back.",
+                "Box, lasso and circle select share one button that shows the one you used last, with the others in its menu.",
+                "Search Settings from the box at the top.",
+                "Back up your settings and shortcuts to a file and restore them, here or on another PC (Settings → General)."
+              ],
+              "improvements": [
+                "S now picks the selection tools (the one you used last; press again for box, lasso, circle). Shapes moved to G. If you had changed either shortcut yourself, your choice is kept.",
+                "Settings opens over the document instead of in a separate window. Esc or the X closes it.",
+                "In Settings, Updates is now part of Account, and Keyboard shortcuts comes last. The separate panel switches became one Sidebar choice.",
+                "Pages and Sections share one sidebar, with a tab for each and an X to close it. Switching tabs keeps your place in each.",
+                "Open, Save, Save As and Print moved from the toolbar into the File menu. Their shortcuts haven't changed.",
+                "Edit Existing Text, Measure, Insert Image and Hand moved into a new Advanced Tools group on the toolbar. Its button shows the last one you used; the arrow beside it shows them all. Measure is no longer in the Ruler button's menu.",
+                "Menus, submenus and right-click menus always stay inside the window, flipping or scrolling when there isn't room, and work with the arrow keys, Enter and Esc.",
+                "The bar under the toolbar stays on one line, so selecting something never pushes the page down."
+              ],
+              "fixes": [
+                "Double-clicking a text box's border no longer starts editing it when the box already fits its text."
+              ],
+              "security": [
+                "Insert Image now checks your plan in the part of Inkwell that reads files, like opening and saving PDFs already do."
+              ]
+            },
+            "notesUrl": "https://github.com/SusG0D/inkwell-releases/releases/tag/v1.0.0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lecture-player",
+      "name": "Lecture Player",
+      "tagline": "Watch, subtitle, translate and trim lecture recordings.",
+      "description": "Lecture Player is a lightweight video player and editor for university lecture recordings. It makes subtitles offline with AI, translates them (English and Thai and more), shows your PDF slides next to the video, splits lectures into chapters and does simple non-destructive edits. Everything runs on your computer: no account, subscription or cloud service.",
+      "icon": "assets/lecture-player.png",
+      "accent": "#2f8fd8",
+      "type": "desktop",
+      "status": "released",
+      "categories": [
+        "Video",
+        "Study"
+      ],
+      "license": {
+        "model": "free",
+        "summary": "Free. No account needed."
+      },
+      "desktop": {
+        "adapter": "electron-nsis",
+        "appId": "com.lectureplayer.app",
+        "exeName": "Lecture Player.exe",
+        "installDirName": "Lecture Player",
+        "userDataDirs": [
+          {
+            "base": "appData",
+            "name": "Lecture Player"
+          }
+        ],
+        "publisher": {
+          "requireSignature": false
+        }
+      }
+    },
+    {
+      "id": "chapture-love",
+      "name": "Chapture: Love",
+      "tagline": "A love letter page made from your photos and words.",
+      "description": "Chapture: Love turns your photos, messages and music into a personal love-letter web page for someone special. Pick a package and theme, add your memories, and share a private link. It runs in your web browser, so there is nothing to install.",
+      "icon": "assets/chapture-love.svg",
+      "accent": "#d6456b",
+      "type": "web",
+      "status": "released",
+      "categories": [
+        "Gifts",
+        "Web"
+      ],
+      "links": {
+        "website": "https://love.thechapture.com",
+        "support": "https://love.thechapture.com"
+      },
+      "license": {
+        "model": "pay-per-use",
+        "summary": "Browse for free. Pay per page; sign-in by email link is optional.",
+        "manageUrl": "https://love.thechapture.com/account/orders"
+      },
+      "web": {
+        "url": "https://love.thechapture.com",
+        "pwa": {
+          "manifestProbe": true,
+          "shortcutNames": [
+            "Chapture Love"
+          ]
+        }
+      }
+    }
+  ],
+  "announcements": [
+    {
+      "id": "launcher-0-1",
+      "date": "2026-10-17",
+      "title": "Welcome to the Aven Launcher",
+      "body": "Install, update and open every Aven Projects app from one place. Apps you already have are found automatically.",
+      "kind": "news"
+    }
+  ],
+  "assets": {
+    "assets/chapture-love.svg": "7b263895837335a2e9b8c28f96e51ded2422326dedb097c14665d0e1ed299b27",
+    "assets/chapture.svg": "128cb2320a7cc96bc80abab8cf85e6c26283bbd7ddb572d0c4790395996f9e09",
+    "assets/inkwell.png": "3fb1cd4c4aa722e3ed3bb92eb3ae5bcf49ebdc9372c016d94d456de77f628f7c",
+    "assets/lecture-player.png": "30ae18b663178e3fe3db662d8bb1793b9fbf7822d196bfeecfd262ba9c4f9f3c"
+  },
+  "services": {}
+}
